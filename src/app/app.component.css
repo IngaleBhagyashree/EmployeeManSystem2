@@ -1,0 +1,62 @@
+.project-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-bottom: 3px solid #ff7e5f; /* Accent underline */
+  }
+  .navbar-nav {
+  display: flex;
+  gap: 30px; /* Increased space between items */
+  list-style-type: none;
+  padding: 10px 0; /* Increased padding for navbar height */
+  margin: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  font-size: 1rem; /* Larger font size for readability */
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+  padding: 15px 20px; /* Larger padding for clickable area */
+  border-radius: 8px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background-color: #ff7e5f;
+}
+
+.active {
+  color: #ff7e5f;
+  font-weight: bold;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px; /* Thicker underline */
+  background: #ff7e5f;
+  transition: width 0.3s ease;
+  margin-top: 6px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Overall Navbar Container Style (Optional) */
+.navbar-container {
+  padding: 15px 30px; /* Adds padding around the navbar content */
+  background-color: #f8f8f8; /* Background color of navbar */
+  border-bottom: 2px solid #ddd; /* Optional: adds a border below navbar */
+}
